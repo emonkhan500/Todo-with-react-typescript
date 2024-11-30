@@ -1,24 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import './App.css';
+let name:string;
+name='4';
+let hobbies:string[]
+
+hobby:hobbies =['3','4','5','6']
+let role:[number,string]
+role=[4,'6']
+
+let NameCheck:(name:string)=>never;
+
+
+// function NameCheck(name:string) {
+//   console.log(name);
+// }
+// NameCheck('emon')
+
+const App:React.FC =()=> {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <span>ToDo Project</span>
     </div>
   );
 }
