@@ -10,7 +10,7 @@ interface Props {
 }
 
 
-const ShowTodo: React.FC<Props> = ({ todo, todos, setTodos }) => {
+const  ShowTodo: React.FC<Props> = ({ todo, todos, setTodos }) => {
   const[edit,setEdit]=useState<boolean>(false)
   console.log(edit);
   const[editTodo,setEditTodo]=useState<string>('')
