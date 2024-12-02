@@ -6,7 +6,7 @@ import ShowTodo from "./Components/ShowTodo";
 
 const App: React.FC = () => {
   const [todo, setTodo] = useState<string>("");
-  
+
   const [todos, setTodos] = useState<Todo[]>([]);
   console.log(todos);
 
@@ -28,7 +28,7 @@ const App: React.FC = () => {
       <Input todo={todo} setTodo={setTodo} handleSubmit={handleSubmit}></Input>
 
       <div>
-        <ShowTodo todos={todos} setTodos={setTodos}></ShowTodo>
+        <ShowTodo todo={todo} todos={todos} setTodos={setTodos}></ShowTodo>
       </div>
     </div>
   );
