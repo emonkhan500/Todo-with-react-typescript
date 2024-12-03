@@ -10,11 +10,12 @@ interface Props {
 }
 
 
-const  ShowTodo: React.FC<Props> = ({ todo, todos, setTodos }) => {
+const ShowTodo: React.FC<Props> = ({ todo, todos, setTodos }) => {
   const[edit,setEdit]=useState<boolean>(false)
   console.log(edit);
   const[editTodo,setEditTodo]=useState<string>('')
 
+  
 const handleDone=(id:number)=>{
   setTodos(todos.map(todo=> todo.id === id ? {...todo, isDone:!todo.isDone}:todo ))
 }
